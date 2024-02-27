@@ -1,0 +1,10 @@
+# Defines wich services we want the app to use
+services:
+  web:
+    build:
+      context: .
+    ports:
+      - 5173:5173
+    volumes:
+      - .:/app
+      - /app/node_modules
